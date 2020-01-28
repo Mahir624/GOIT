@@ -1,66 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,900" rel="stylesheet">
+    <title>Homework 05</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <ul>
-        <li>
-            <a href="lifstyle">lifstyle</a>
-        </li>
-        <li>
-            <a href="photodiary">photodiary</a>
-        </li>
-        <li>
-            <a href="music">music</a>
-        </li>
-        <li>
-            <a href="travel">travel</a>
-        </li>
-    </ul>
-    <img src="homework-03 (1).jpg" alt="homework-03(1).jpg">
-    <p>lifstyle</p>
-    <h2>
-        Life tastes better with coffee
-    </h2>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque voluptas officiis ea libero tempora, voluptate ullam ad sit cupiditate nisi voluptatum, aperiam culpa qui quia atque quae excepturi beatae? Voluptatem!
-    </p>
-    <img src="homework-03 (2).jpg" alt="homework-03(2).jpg">
-    <p>
-        photodiary
-    </p>
-    <h2>
-        American dream
-    </h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut sunt adipisci sint doloremque, recusandae, voluptatum dolores suscipit nihil ullam quaerat iste reiciendis expedita maiores saepe, molestiae delectus dolore! Dolorum.</p>
-    <img src="homework-03 (3).jpg" alt="homework-03(3).jpg">
-    <p>photodiary</p>
-    <h2>
-        a day exploring the Alps
-    </h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quibusdam impedit exercitationem error, laudantium asperiores nesciunt, accusamus cum possimus obcaecati deleniti velit in ipsum maiores fuga? Nobis voluptate molestias nemo.</p>
-    <img src="homework-03 (4).jpg" alt="homework-03(4).jpg">
-<p>
-    travel
-</p>
-<h2>
-    Lorem, ipsum dolor.
-</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima possimus aperiam fugit officia cumque nihil iste, nostrum quis pariatur molestiae nobis dolore nulla vero? Sed harum eligendi excepturi vitae provident.</p>
-    <img src="homework-03 (5).jpg" alt="homework-03(5).jpg">
-    <p>music</p>
-    <h2>Lorem ipsum dolor sit.</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea ex nam exercitationem doloribus commodi mollitia corrupti, vel dicta aspernatur eos aperiam molestiae rerum ullam nisi adipisci maiores quae nihil.</p>
-    <img src="homework-03.jpg" alt="homework-03.jpg">
-    <p>
-        More then just a music festival
-    </p>
-<button>
-    load more
-</button>
+    <!-- MENU SECTION -->
+    <header class="page-header clearfix">
+        <nav>
+            <p class="site-logo">
+                <a href="#">mart</a>
+            </p>
+            <ul class="top clearfix">
+                <li class="site-nav">
+                    <a href="#">Home</a>
+                </li>
+                <li class="site-nav">
+                    <a href="#">About us</a>
+                </li>
+                <li class="site-nav">
+                    <a href="#">Page</a>
+                </li>
+                <li class="site-nav">
+                    <a href="#">Shop</a>
+                </li>
+                <li class="site-nav">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="site-nav">
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- SLIDER -->
+    <div class="slider">
+        <img class="bunner" src="img/banner.jpg" alt="bunner" width="1600px" height="600px">
+        <div class="black-bunner"></div>
+        <button class="left">
+            <i class="fas fa-angle-left"></i>
+        </button>
+        <div class="slider-text">
+            <p class="slider-bigtext">Affordable paris tours</p>
+            <p class="slider-smalltext">City tours / Tour tickets / Tour guides</p>
+        </div>
+        <button class="right">
+            <i class="fas fa-angle-right"></i>
+        </button>
+    </div>
+    <!-- NEW COLLECTION -->
+    <main>
+        <section class="gallery">
+            <h2 class="featured-title">New collection</h2>
+            <ul class="featured">
+                <div class="featured-item">
+                    <li class="shop">
+                        <div class="blackground">
+                            <div class="cart-box">
+                                <ul class="cart">
+                                    <li class="like">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="switch">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-random"></i>
+                                        </a>
+                                    </li>
+                                    <li class="clock">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-clock"></i>
+                                        </a>
+                                    </li>
+                                    <li class="add">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-shopping-cart"></i>Add to cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="img/1.png" alt="Blue tshirt" width="255px" height="322">
+                        <a class="prod" href="#">Blue tshirt</a>
+                        <p class="price">26</p>
+                    </li>
+                </div>
+                <div class="featured-item">
+                    <li class="shop">
+                        <div class="blackground">
+                            <div class="cart-box">
+                                <ul class="cart">
+                                    <li class="like">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="switch">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-random"></i>
+                                        </a>
+                                    </li>
+                                    <li class="clock">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-clock"></i>
+                                        </a>
+                                    </li>
+                                    <li class="add">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-shopping-cart"></i>Add to cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="img/2.png" alt="Woman shirt" width="255px" height="322">
+                        <a class="prod" href="#">Woman shirt</a>
+                        <p class="price">31</p>
+                    </li>
+                </div>
+                <div class="featured-item">
+                    <li class="shop">
+                        <div class="blackground">
+                            <div class="cart-box">
+                                <ul class="cart">
+                                    <li class="like">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="switch">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-random"></i>
+                                        </a>
+                                    </li>
+                                    <li class="clock">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-clock"></i>
+                                        </a>
+                                    </li>
+                                    <li class="add">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-shopping-cart"></i>Add to cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="img/3.png" alt="Yellow tshirt" width="255px" height="322">
+                        <a class="prod" href="#">Yellow tshirt</a>
+                        <p class="price">21</p>
+                    </li>
+                </div>
+                <div class="featured-item">
+                    <li class="shop">
+                        <div class="blackground">
+                            <div class="cart-box">
+                                <ul class="cart">
+                                    <li class="like">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="switch">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-random"></i>
+                                        </a>
+                                    </li>
+                                    <li class="clock">
+                                        <a href="#" class="cart-link">
+                                            <i class="far fa-clock"></i>
+                                        </a>
+                                    </li>
+                                    <li class="add">
+                                        <a href="#" class="cart-link">
+                                            <i class="fas fa-shopping-cart"></i>Add to cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="img/4.png" alt="Cool lingerie" width="255px" height="322">
+                        <a class="prod" href="#">Cool lingerie</a>
+                        <p class="price">56</p>
+
+                    </li>
+                </div>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <p class="footer-text">All Rights Reserved © Dokan | Designed
+                <p class="footer-text blue">ThemenGraph</p>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
