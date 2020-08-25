@@ -1,0 +1,119 @@
+
+//HEADER
+
+.header {
+	box-sizing:    border-box;
+	height:        1000px;
+	margin-bottom: 46px;
+	padding-top:   28px;
+	background:    linear-gradient(to top, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), url("../img/background/background.jpg") center no-repeat;
+	color:         #ffffff;
+}
+
+.nav-bar {
+	@extend %display-flex;
+	width:  1200px;
+	margin: 0 auto 70px;
+}
+
+.nav-bar__menu {
+	@extend %display-flex;
+	min-width: 630px;
+}
+
+.nav-bar__item {
+	padding-top: 13px;
+	&:hover .nav-bar__link::after {
+		@extend %hover-anim;
+		background: #fce38a;
+	}
+	&:hover .nav-bar__link {
+		@extend %hover-anim;
+		color: #fce38a;
+	}
+	&--btn {
+		&:nth-last-child(1) .btn--nav-bar {
+			background: url("../img/icons/svg/lens.svg") no-repeat center;
+		}
+		&:nth-last-child(2) .btn--nav-bar {
+			background: url("../img/icons/svg/cart.svg") no-repeat center;
+		}
+		&:hover {
+			&:nth-last-child(1) .btn--nav-bar {
+				background: url("../img/icons/svg/hovered/lens.svg") no-repeat center;
+			}
+			&:nth-last-child(2) .btn--nav-bar {
+				background: url("../img/icons/svg/hovered/cart.svg") no-repeat center;
+			}
+		}
+	}
+}
+
+.btn--nav-bar {
+	margin:           0;
+	width:            33px;
+	height:           33px;
+	border:           none;
+	font-size:        0;
+	background-color: transparent;
+}
+
+.nav-bar__item, .nav-bar__item--btn {
+	display:        flex;
+	align-items:    center;
+	text-transform: uppercase;
+}
+
+.nav-bar__link {
+	display:    inline-block;
+	min-width:  80px;
+	font-size:  14px;
+	color:      #ffffff;
+	text-align: center;
+	&::after {
+		@extend %pseudo-e;
+		width:  50px;
+		height: 3px;
+		margin: 10px auto 0;
+	}
+}
+
+.logo--nav {
+	@extend %font-bold;
+	font-size: 30px;
+	color:     #ffffff;
+	&:hover {
+		@extend %hover-anim;
+		color: #fce38a;
+	}
+}
+
+.greeting {
+	@extend %font-bold;
+	margin:         0 auto 60px;
+	font-size:      150px;
+	line-height:    150px;
+	text-transform: uppercase;
+	&--first-line {
+		@extend %kaushan-ff;
+		margin:    0;
+		font-size: 72px;
+	}
+}
+
+.cta {
+	display:          block;
+	width:            160px;
+	height:           40px;
+	margin:           auto;
+	border:           solid 3px;
+	background-color: transparent;
+	color:            #ffffff;
+	text-transform:   uppercase;
+	&:hover {
+		@extend %hover-anim;
+		color:            #e88482;
+		border-color:     #e88482;
+		background-color: #eab894;
+	}
+}

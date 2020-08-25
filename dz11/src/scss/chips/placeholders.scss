@@ -1,0 +1,38 @@
+%display-flex {
+	display:         flex;
+	justify-content: space-between;
+	align-items:     center;
+}
+
+%pseudo-e {
+	content: '';
+	display: block;
+}
+
+%hover-anim {
+	transition: all 0.8s;
+}
+
+%kaushan-ff {
+	font-weight:    normal;
+	font-family:    "Kaushan Script";
+	text-transform: none;
+}
+
+%roboto-ff {
+	font-size:   15px;
+	line-height: 24px;
+	color:       rgb(153, 153, 153);
+	font-family: "Roboto";
+}
+
+%font-bold {
+	font-weight: bold;
+	text-align:  center
+}
+
+%text__14px-gray {
+	font-size:      14px;
+	color:          rgb(51, 51, 51);
+	text-transform: uppercase;
+}

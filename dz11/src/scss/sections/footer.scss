@@ -1,0 +1,59 @@
+
+//FOOTER
+
+.footer {
+	@extend %display-flex;
+	width:      1200px;
+	height:     70px;
+	margin:     auto;
+	border-top: 1px solid #e5e5e5;
+}
+
+.copy {
+	font-size:  14px;
+	text-align: center;
+	color:      #333333;
+}
+
+.copy__link {
+	color: #f38181;
+}
+
+.subscribe {
+	display: flex;
+}
+
+.subscribe__email {
+	@extend %roboto-ff;
+	box-sizing:   border-box;
+	width:        230px;
+	height:       40px;
+	padding-left: 10px;
+	border:       1px solid #e7e7e7;
+	font-style:   italic;
+	color:        #cccccc;
+	outline: none;
+}
+
+.subscribe__email:valid {
+	border-bottom-color: #95e1d3;
+}
+
+.subscribe__email:focus:invalid {
+	border-bottom-color: #f38181;
+}
+
+.subscribe__submit {
+	@extend %text__14px-gray;
+	@extend %font-bold;
+	width:      150px;
+	height:     40px;
+	background: #95e1d3;
+	border:     none;
+	color:      #ffffff;
+}
+
+.subscribe__submit:hover {
+	@extend %hover-anim;
+	opacity: 0.5;
+}

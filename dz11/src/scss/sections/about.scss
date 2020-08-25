@@ -1,0 +1,51 @@
+
+//ABOUT SECTION
+
+.about {
+	width:          1200px;
+	margin:         0 auto;
+	padding-bottom: 65px;
+}
+
+.about__desc {
+	@extend %roboto-ff;
+	width:      930px;
+	margin:     0 auto 90px;
+	text-align: center;
+}
+
+.team-item {
+	&:hover {
+		& .team-item__wrapper {
+			@extend %hover-anim;
+			transform:  translate(-10px, -10px);
+			box-shadow: #95e1d3 10px 10px;
+		}
+		& .socials {
+			@extend %hover-anim;
+			opacity: 1;
+		}
+	}
+}
+
+.team-item__wrapper {
+	position:      relative;
+	height:        470px;
+	margin-bottom: 30px;
+}
+
+.team-item__title {
+	@extend %text__14px-gray;
+	@extend %font-bold;
+}
+
+.team-list {
+	@extend %display-flex;
+}
+
+.team-item__post {
+	@extend %roboto-ff;
+	font-weight: lighter;
+	font-style:  italic;
+	text-align:  center;
+}

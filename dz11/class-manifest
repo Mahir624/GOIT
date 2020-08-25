@@ -1,0 +1,49 @@
+body
+header
+list
+link
+btn
+    btn--nav-bar
+section-title
+    section-title--first-line
+
+nav-bar
+    nav-bar__menu
+    nav-bar__item
+        nav-bar__item--btn
+    nav-bar__link
+
+logo--nav
+
+greeting
+    greeting--first-line
+
+cta
+
+section.features
+features-list
+    features-list__item features-item
+        features-item__title
+        features-item__desc
+
+section.about
+    about__desc
+team-list
+    team-list_item team-item
+        team-item__wrapper
+        team-item__pic
+        team-item__title
+        team-item__post
+
+
+socials
+    socials__item
+    socials__link
+    socials__icon
+
+footer
+copy
+    copy__link
+subscribe
+    subscribe__email
+    subscribe__submit
