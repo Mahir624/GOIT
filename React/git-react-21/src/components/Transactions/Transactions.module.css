@@ -1,0 +1,19 @@
+.transactions {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.item {
+  padding: 10px;
+  width: 100px;
+  border: 1px solid grey;
+}
+
+.table {
+  background-color: rgb(161, 161, 197);
+  color: white;
+}
+
+.row:nth-child(2n) {
+  background-color: rgb(218, 225, 228);
+}
